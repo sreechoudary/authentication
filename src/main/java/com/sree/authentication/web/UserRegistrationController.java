@@ -15,6 +15,11 @@ import com.sree.authentication.web.dto.UserRegistrationDto;
 
 import javax.validation.Valid;
 
+/**
+ * 
+ * @author SreenivasraoMuppavar
+ *
+ */
 @Controller
 @RequestMapping("/registration")
 public class UserRegistrationController {

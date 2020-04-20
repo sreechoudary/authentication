@@ -4,6 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+/**
+ * 
+ * @author SreenivasraoMuppavar
+ *
+ */
 @Controller
 public class MainController {
 
@@ -20,5 +25,10 @@ public class MainController {
     @GetMapping("/user")
     public String userIndex() {
         return "user/index";
+    }
+    
+    @GetMapping("/access-denied")
+    public String accessDenied() {
+        return "/error/access-denied";
     }
 }

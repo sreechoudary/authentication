@@ -7,6 +7,11 @@ import javax.validation.constraints.NotEmpty;
 import com.sree.authentication.constraint.FieldMatch;
 import com.sree.authentication.recaptcha.ValidReCaptcha;
 
+/**
+ * 
+ * @author SreenivasraoMuppavar
+ *
+ */
 @FieldMatch.List({
         @FieldMatch(first = "password", second = "confirmPassword", message = "The password fields must match"),
         @FieldMatch(first = "email", second = "confirmEmail", message = "The email fields must match")

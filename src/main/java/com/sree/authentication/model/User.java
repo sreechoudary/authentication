@@ -3,6 +3,11 @@ package com.sree.authentication.model;
 import javax.persistence.*;
 import java.util.Collection;
 
+/**
+ * 
+ * @author SreenivasraoMuppavar
+ *
+ */
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class User {
