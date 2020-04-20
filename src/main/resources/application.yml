@@ -27,10 +27,10 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     database-platform: MYSQL
     properties:
-      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+      hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 # ===============================
 # = Logging configurations
