@@ -33,6 +33,24 @@ spring:
       hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 # ===============================
+# = MAIL configurations
+# ===============================
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: 
+    password: 
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
+
+# ===============================
 # = Logging configurations
 # ===============================
 logging:
@@ -49,5 +67,5 @@ logging:
 google:
   recaptcha:
     url: https://www.google.com/recaptcha/api/siteverify
-    key: 6Ldzv-sUAAAAAB02M3nV7iH-9jLMgW3GGjgxVqk5
-    secret: 6Ldzv-sUAAAAAFAMhCfWdDCCfqec8xN-wREHkPyT
+    key: 
+    secret: 
